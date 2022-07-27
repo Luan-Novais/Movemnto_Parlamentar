@@ -1,11 +1,11 @@
 from modulos.sessaoSpark import spark
 
-class readArquivos:
+class ler_arquivos:
 
-    def lerArquivosCsv(pathCompleto,spark):
+    def ler_arquivo_csv(pathCompleto,spark):
         df = spark.read.option("header",True).csv(pathCompleto)    
         return df
 
-    def lerArquivosJson(pathCompleto,spark):
-        df = spark.read.option("header",True).json(pathCompleto)    
+    def ler_arquivo_json(pathCompleto,spark):
+        df = spark.read.option("multiline","true").json(pathCompleto)    
         return df
