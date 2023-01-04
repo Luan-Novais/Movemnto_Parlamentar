@@ -1,10 +1,10 @@
 import os
 
-arquivos_raw = os.listdir('/home/luan/Desktop/DADOS/RAW/2022/')
+arquivos_raw = os.listdir('/home/luan/Desktop/DADOS/RAW/2023/')
 
 for item in arquivos_raw:
-    path_raw = f'/home/luan/Desktop/DADOS/RAW/2022/{item}'
-    path_bronze = f'/home/luan/Desktop/DADOS/BRONZE/2022/{item}'
+    path_raw = f'/home/luan/Desktop/DADOS/RAW/2023/{item}'
+    path_bronze = f'/home/luan/Desktop/DADOS/BRONZE/2023/{item}'
 
     with  open(path_raw,'r',encoding='utf-8') as arq:
         data = arq.read()
